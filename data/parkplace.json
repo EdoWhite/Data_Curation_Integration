@@ -1,0 +1,745 @@
+{
+    "offset": 0,
+    "data": [
+        {
+            "sactive": false,
+            "savailable": true,
+            "scode": "102",
+            "scoordinate": {
+                "x": 11.356305,
+                "y": 46.496449,
+                "srid": 4326
+            },
+            "smetadata": {
+                "state": 1,
+                "capacity": 233,
+                "mainaddress": "Via Dr. Julius Perathoner",
+                "phonenumber": "0471 970289",
+                "municipality": "Bolzano - Bozen",
+                "disabledtoiletavailable": true
+            },
+            "sname": "P02 - City parking",
+            "sorigin": "FAMAS",
+            "stype": "ParkingStation"
+        },
+        {
+            "sactive": false,
+            "savailable": true,
+            "scode": "107",
+            "scoordinate": {
+                "x": 11.351793,
+                "y": 46.502958,
+                "srid": 4326
+            },
+            "smetadata": {
+                "state": 1,
+                "capacity": 170,
+                "mainaddress": "Via Claudia de Medici, 1",
+                "phonenumber": "0471 978440",
+                "municipality": "Bolzano - Bozen"
+            },
+            "sname": "P07 - Mareccio",
+            "sorigin": "FAMAS",
+            "stype": "ParkingStation"
+        },
+        {
+            "sactive": false,
+            "savailable": true,
+            "scode": "112",
+            "scoordinate": {
+                "x": 11.338545,
+                "y": 46.497757,
+                "srid": 4326
+            },
+            "smetadata": {
+                "state": 1,
+                "capacity": 120,
+                "mainaddress": "Via Duca d'Aosta",
+                "phonenumber": "0471 260634",
+                "municipality": "Bolzano - Bozen"
+            },
+            "sname": "P12 - Piazza Tribunale",
+            "sorigin": "FAMAS",
+            "stype": "ParkingStation"
+        },
+        {
+            "sactive": false,
+            "savailable": true,
+            "scode": "113",
+            "scoordinate": {
+                "x": 11.338206,
+                "y": 46.498294,
+                "srid": 4326
+            },
+            "smetadata": {
+                "state": 1,
+                "capacity": 490,
+                "mainaddress": "Viale Amedeo Duca D'Aosta, 53",
+                "phonenumber": "0471 270870",
+                "municipality": "Bolzano - Bozen"
+            },
+            "sname": "P13 - Direzional 2",
+            "sorigin": "FAMAS",
+            "stype": "ParkingStation"
+        },
+        {
+            "sactive": false,
+            "savailable": true,
+            "scode": "420",
+            "scoordinate": {
+                "x": 11.347308,
+                "y": 46.494624,
+                "srid": 4326
+            },
+            "smetadata": {
+                "state": 1,
+                "capacity": 70,
+                "mainaddress": "Viale Alessandro Volta",
+                "phonenumber": "0471000000",
+                "municipality": "Bolzano - Bozen"
+            },
+            "sname": "@LUNA NOI Technologie Park(test)",
+            "sorigin": "Legocity",
+            "stype": "ParkingStation"
+        },
+        {
+            "sactive": false,
+            "savailable": true,
+            "scode": "520",
+            "scoordinate": {
+                "x": 11.332848,
+                "y": 46.479249,
+                "srid": 4326
+            },
+            "smetadata": {
+                "state": 1,
+                "capacity": 50,
+                "mainaddress": "Viale Druso",
+                "phonenumber": "0471000000",
+                "municipality": "Bolzano - Bozen"
+            },
+            "sname": "@LUNA Parking-Bikesharing(test)",
+            "sorigin": "Legocity",
+            "stype": "ParkingStation"
+        },
+        {
+            "sactive": true,
+            "savailable": true,
+            "scode": "103",
+            "scoordinate": {
+                "x": 11.355115,
+                "y": 46.497805,
+                "srid": 4326
+            },
+            "smetadata": {
+                "capacity": 403,
+                "municipality": "Bolzano - Bozen"
+            },
+            "sname": "P03 - Piazza Walther",
+            "sorigin": "FAMAS",
+            "stype": "ParkingStation"
+        },
+        {
+            "sactive": true,
+            "savailable": true,
+            "scode": "104",
+            "scoordinate": {
+                "x": 11.358216,
+                "y": 46.500551,
+                "srid": 4326
+            },
+            "smetadata": {
+                "capacity": 150,
+                "municipality": "Bolzano - Bozen",
+                "standard_name": "Parcheggio Luna Via Molini"
+            },
+            "sname": "P04 - Luna via Molini",
+            "sorigin": "FAMAS",
+            "stype": "ParkingStation"
+        },
+        {
+            "sactive": true,
+            "savailable": true,
+            "scode": "105",
+            "scoordinate": {
+                "x": 11.357255,
+                "y": 46.498174,
+                "srid": 4326
+            },
+            "smetadata": {
+                "capacity": 90,
+                "municipality": "Bolzano - Bozen",
+                "standard_name": "Parcheggio Laurin"
+            },
+            "sname": "P05 - Laurin",
+            "sorigin": "FAMAS",
+            "stype": "ParkingStation"
+        },
+        {
+            "sactive": true,
+            "savailable": true,
+            "scode": "106",
+            "scoordinate": {
+                "x": 11.358907,
+                "y": 46.497134,
+                "srid": 4326
+            },
+            "smetadata": {
+                "capacity": 459,
+                "municipality": "Bolzano - Bozen",
+                "standard_name": "Parcheggio Central Parking"
+            },
+            "sname": "P06 - Central Parking via Renon",
+            "sorigin": "FAMAS",
+            "stype": "ParkingStation"
+        },
+        {
+            "sactive": true,
+            "savailable": true,
+            "scode": "108",
+            "scoordinate": {
+                "x": 11.356716,
+                "y": 46.494402,
+                "srid": 4326
+            },
+            "smetadata": {
+                "capacity": 1055,
+                "municipality": "Bolzano - Bozen",
+                "standard_name": "Parcheggio Resia"
+            },
+            "sname": "P08 - BZ Centro via Mayr Nusser",
+            "sorigin": "FAMAS",
+            "stype": "ParkingStation"
+        },
+        {
+            "sactive": true,
+            "savailable": true,
+            "scode": "115",
+            "scoordinate": {
+                "x": 11.318078,
+                "y": 46.491603,
+                "srid": 4326
+            },
+            "smetadata": {
+                "capacity": 425,
+                "municipality": "Bolzano - Bozen",
+                "standard_name": "Parcheggio Palasport"
+            },
+            "sname": "P15 - Palasport via Resia",
+            "sorigin": "FAMAS",
+            "stype": "ParkingStation"
+        },
+        {
+            "sactive": true,
+            "savailable": true,
+            "scode": "116",
+            "scoordinate": {
+                "x": 11.327066,
+                "y": 46.472249,
+                "srid": 4326
+            },
+            "smetadata": {
+                "capacity": 770,
+                "municipality": "Bolzano - Bozen"
+            },
+            "sname": "P16 - Fiera via Marco Polo/Buozzi",
+            "sorigin": "FAMAS",
+            "stype": "ParkingStation"
+        },
+        {
+            "sactive": true,
+            "savailable": true,
+            "scode": "me:parkhuber",
+            "scoordinate": {
+                "x": 11.156807,
+                "y": 46.674215,
+                "srid": 4326
+            },
+            "smetadata": {
+                "capacity": 51,
+                "municipality": "Meran - Merano"
+            },
+            "sname": "Park Huber",
+            "sorigin": "Municipality Merano",
+            "stype": "ParkingStation"
+        },
+        {
+            "sactive": true,
+            "savailable": true,
+            "scode": "me:parkkarlwolf",
+            "scoordinate": {
+                "x": 11.15884,
+                "y": 46.675253,
+                "srid": 4326
+            },
+            "smetadata": {
+                "capacity": 206,
+                "municipality": "Meran - Merano"
+            },
+            "sname": "Park Karl Wolf",
+            "sorigin": "Municipality Merano",
+            "stype": "ParkingStation"
+        },
+        {
+            "sactive": true,
+            "savailable": true,
+            "scode": "me:parkkellereialgund",
+            "scoordinate": {
+                "x": 11.16139,
+                "y": 46.673369,
+                "srid": 4326
+            },
+            "smetadata": {
+                "capacity": 255,
+                "municipality": "Meran - Merano"
+            },
+            "sname": "Park Kellerei Algund",
+            "sorigin": "Municipality Merano",
+            "stype": "ParkingStation"
+        },
+        {
+            "sactive": true,
+            "savailable": true,
+            "scode": "me:parkplaza",
+            "scoordinate": {
+                "x": 11.158684,
+                "y": 46.673044,
+                "srid": 4326
+            },
+            "smetadata": {
+                "capacity": 321,
+                "municipality": "Meran - Merano"
+            },
+            "sname": "Park Plaza",
+            "sorigin": "Municipality Merano",
+            "stype": "ParkingStation"
+        },
+        {
+            "sactive": true,
+            "savailable": true,
+            "scode": "me:parkterme",
+            "scoordinate": {
+                "x": 11.161318,
+                "y": 46.669426,
+                "srid": 4326
+            },
+            "smetadata": {
+                "capacity": 545,
+                "municipality": "Meran - Merano"
+            },
+            "sname": "Park Terme",
+            "sorigin": "Municipality Merano",
+            "stype": "ParkingStation"
+        },
+        {
+            "sactive": true,
+            "savailable": true,
+            "scode": "parking-a22:2",
+            "scoordinate": {
+                "x": 11.502474,
+                "y": 46.996795,
+                "srid": 4326
+            },
+            "smetadata": {
+                "metro": 1000,
+                "capacità": 25,
+                "autostrada": "A22",
+                "iddirezione": "Nord"
+            },
+            "sname": "BRENNERO NORD",
+            "sorigin": "A22",
+            "stype": "ParkingStation"
+        },
+        {
+            "sactive": true,
+            "savailable": true,
+            "scode": "parking-a22:25",
+            "scoordinate": {
+                "x": 11.086914,
+                "y": 46.141744,
+                "srid": 4326
+            },
+            "smetadata": {
+                "metro": 129000,
+                "capacità": 27,
+                "autostrada": "A22",
+                "iddirezione": "Sud"
+            },
+            "sname": "PAGANELLA OVEST",
+            "sorigin": "A22",
+            "stype": "ParkingStation"
+        },
+        {
+            "sactive": true,
+            "savailable": true,
+            "scode": "parking-a22:26",
+            "scoordinate": {
+                "x": 11.087135,
+                "y": 46.142167,
+                "srid": 4326
+            },
+            "smetadata": {
+                "metro": 128913,
+                "capacità": 36,
+                "autostrada": "A22",
+                "iddirezione": "Nord"
+            },
+            "sname": "PAGANELLA EST",
+            "sorigin": "A22",
+            "stype": "ParkingStation"
+        },
+        {
+            "sactive": true,
+            "savailable": true,
+            "scode": "parking-a22:296",
+            "scoordinate": {
+                "x": 11.315851,
+                "y": 46.474125,
+                "srid": 4326
+            },
+            "smetadata": {
+                "metro": 85327,
+                "capacità": 76,
+                "autostrada": "A22",
+                "iddirezione": "Entrambe"
+            },
+            "sname": "FIRMIAN",
+            "sorigin": "A22",
+            "stype": "ParkingStation"
+        },
+        {
+            "sactive": true,
+            "savailable": true,
+            "scode": "parking-a22:3",
+            "scoordinate": {
+                "x": 11.502474,
+                "y": 46.996795,
+                "srid": 4326
+            },
+            "smetadata": {
+                "metro": 1000,
+                "capacità": 80,
+                "autostrada": "A22",
+                "iddirezione": "Sud"
+            },
+            "sname": "BRENNERO SUD",
+            "sorigin": "A22",
+            "stype": "ParkingStation"
+        },
+        {
+            "sactive": true,
+            "savailable": true,
+            "scode": "parking-a22:52",
+            "scoordinate": {
+                "x": 10.848427,
+                "y": 44.702979,
+                "srid": 4326
+            },
+            "smetadata": {
+                "metro": 309076,
+                "capacità": 108,
+                "autostrada": "A22",
+                "iddirezione": "Sud"
+            },
+            "sname": "CAMPOGALLIANO OVEST",
+            "sorigin": "A22",
+            "stype": "ParkingStation"
+        },
+        {
+            "sactive": true,
+            "savailable": true,
+            "scode": "parking-a22:7",
+            "scoordinate": {
+                "x": 11.433339,
+                "y": 46.88559,
+                "srid": 4326
+            },
+            "smetadata": {
+                "metro": 15700,
+                "capacità": 500,
+                "autostrada": "A22",
+                "iddirezione": "Entrambe"
+            },
+            "sname": "SADOBRE",
+            "sorigin": "A22",
+            "stype": "ParkingStation"
+        },
+        {
+            "sactive": true,
+            "savailable": true,
+            "scode": "parking-a22:774",
+            "scoordinate": {
+                "x": 11.086665,
+                "y": 46.118033,
+                "srid": 4326
+            },
+            "smetadata": {
+                "metro": 131739,
+                "capacità": 255,
+                "autostrada": "A22",
+                "iddirezione": "Entrambe"
+            },
+            "sname": "INTERPORTO TRENTO",
+            "sorigin": "A22",
+            "stype": "ParkingStation"
+        },
+        {
+            "sactive": true,
+            "savailable": true,
+            "scode": "parking-a22:776",
+            "scoordinate": {
+                "x": 11.498178,
+                "y": 46.990266,
+                "srid": 4326
+            },
+            "smetadata": {
+                "metro": 1800,
+                "capacità": 42,
+                "autostrada": "A22",
+                "iddirezione": "Entrambe"
+            },
+            "sname": "CASA LUPO",
+            "sorigin": "A22",
+            "stype": "ParkingStation"
+        },
+        {
+            "sactive": true,
+            "savailable": true,
+            "scode": "parking-a22:832",
+            "scoordinate": {
+                "x": 10.999915,
+                "y": 45.844832,
+                "srid": 4326
+            },
+            "smetadata": {
+                "metro": 166739,
+                "capacità": 96,
+                "autostrada": "A22",
+                "iddirezione": "Entrambe"
+            },
+            "sname": "ROVERETO SUD",
+            "sorigin": "A22",
+            "stype": "ParkingStation"
+        },
+        {
+            "sactive": true,
+            "savailable": true,
+            "scode": "ROVERETO:asm",
+            "scoordinate": {
+                "x": 11.036507,
+                "y": 45.893593,
+                "srid": 4326
+            },
+            "smetadata": {
+                "capacity": 145,
+                "mainaddress": "Piazzale ex-A.S.M - Via Manzoni - Rovereto",
+                "municipality": "Rovereto"
+            },
+            "sname": "A.S.M.",
+            "sorigin": "FBK",
+            "stype": "ParkingStation"
+        },
+        {
+            "sactive": true,
+            "savailable": true,
+            "scode": "ROVERETO:centrostorico",
+            "scoordinate": {
+                "x": 11.045004,
+                "y": 45.890306,
+                "srid": 4326
+            },
+            "smetadata": {
+                "capacity": 143,
+                "mainaddress": "Viale dei Colli - Rovereto",
+                "municipality": "Rovereto"
+            },
+            "sname": "Centro Storico",
+            "sorigin": "FBK",
+            "stype": "ParkingStation"
+        },
+        {
+            "sactive": true,
+            "savailable": true,
+            "scode": "ROVERETO:mart",
+            "scoordinate": {
+                "x": 11.044661,
+                "y": 45.894705,
+                "srid": 4326
+            },
+            "smetadata": {
+                "capacity": 224,
+                "mainaddress": "Mart - Via Sticcotta - Rovereto",
+                "municipality": "Rovereto"
+            },
+            "sname": "Mart",
+            "sorigin": "FBK",
+            "stype": "ParkingStation"
+        },
+        {
+            "sactive": true,
+            "savailable": true,
+            "scode": "ROVERETO:parcheggiocentro",
+            "scoordinate": {
+                "x": 11.039152,
+                "y": 45.892243,
+                "srid": 4326
+            },
+            "smetadata": {
+                "capacity": 194,
+                "mainaddress": "Via Alessandro Manzoni - Rovereto",
+                "municipality": "Rovereto"
+            },
+            "sname": "Parcheggio Centro",
+            "sorigin": "FBK",
+            "stype": "ParkingStation"
+        },
+        {
+            "sactive": true,
+            "savailable": true,
+            "scode": "ROVERETO:stazione",
+            "scoordinate": {
+                "x": 11.034458,
+                "y": 45.889441,
+                "srid": 4326
+            },
+            "smetadata": {
+                "capacity": 110,
+                "mainaddress": "Stazione - Via Via Brigata Acqui - Rovereto",
+                "municipality": "Rovereto"
+            },
+            "sname": "Stazione",
+            "sorigin": "FBK",
+            "stype": "ParkingStation"
+        },
+        {
+            "sactive": true,
+            "savailable": true,
+            "scode": "TRENTO:areaexsitviacanestrinip1",
+            "scoordinate": {
+                "x": 11.1162,
+                "y": 46.0691,
+                "srid": 4326
+            },
+            "smetadata": {
+                "capacity": 300,
+                "mainaddress": "Lung'Adige Monte Grappa",
+                "municipality": "Trento"
+            },
+            "sname": "Area ex SIT via Canestrini - P1",
+            "sorigin": "FBK",
+            "stype": "ParkingStation"
+        },
+        {
+            "sactive": true,
+            "savailable": true,
+            "scode": "TRENTO:autosilobuonconsigliop3",
+            "scoordinate": {
+                "x": 11.124208,
+                "y": 46.073612,
+                "srid": 4326
+            },
+            "smetadata": {
+                "capacity": 633,
+                "mainaddress": "Via F. Petrarca, 1/5",
+                "municipality": "Trento"
+            },
+            "sname": "Autosilo Buonconsiglio - P3",
+            "sorigin": "FBK",
+            "stype": "ParkingStation"
+        },
+        {
+            "sactive": true,
+            "savailable": true,
+            "scode": "TRENTO:centroeuropap2",
+            "scoordinate": {
+                "x": 11.121393,
+                "y": 46.073551,
+                "srid": 4326
+            },
+            "smetadata": {
+                "capacity": 480,
+                "mainaddress": "Via G. Segantini, 7",
+                "municipality": "Trento"
+            },
+            "sname": "Centro Europa - P2",
+            "sorigin": "FBK",
+            "stype": "ParkingStation"
+        },
+        {
+            "sactive": true,
+            "savailable": true,
+            "scode": "TRENTO:cteviabomportop6",
+            "scoordinate": {
+                "x": 11.1163,
+                "y": 46.065,
+                "srid": 4326
+            },
+            "smetadata": {
+                "capacity": 250,
+                "mainaddress": "Via Bomporto",
+                "municipality": "Trento",
+                "standard_name": "Parcheggio CTE via Bomporto"
+            },
+            "sname": "CTE via Bomporto - P6",
+            "sorigin": "FBK",
+            "stype": "ParkingStation"
+        },
+        {
+            "sactive": true,
+            "savailable": true,
+            "scode": "TRENTO:duomop5",
+            "scoordinate": {
+                "x": 11.115151,
+                "y": 46.067219,
+                "srid": 4326
+            },
+            "smetadata": {
+                "capacity": 300,
+                "mainaddress": "Piazza Ezio Mosna, 1/A",
+                "municipality": "Trento"
+            },
+            "sname": "Duomo - P5",
+            "sorigin": "FBK",
+            "stype": "ParkingStation"
+        },
+        {
+            "sactive": true,
+            "savailable": true,
+            "scode": "TRENTO:piazzafierap4",
+            "scoordinate": {
+                "x": 11.125044,
+                "y": 46.065635,
+                "srid": 4326
+            },
+            "smetadata": {
+                "capacity": 450,
+                "mainaddress": "Piazza Fiera",
+                "municipality": "Trento",
+                "standard_name": "Parcheggio Piazza Fiera"
+            },
+            "sname": "Piazza Fiera - P4",
+            "sorigin": "FBK",
+            "stype": "ParkingStation"
+        },
+        {
+            "sactive": true,
+            "savailable": true,
+            "scode": "TRENTO:piazzalesanseverinop7",
+            "scoordinate": {
+                "x": 11.1145,
+                "y": 46.0657,
+                "srid": 4326
+            },
+            "smetadata": {
+                "capacity": 342,
+                "mainaddress": "Piazzale Roberto da Sanseverino",
+                "municipality": "Trento",
+                "standard_name": "Parcheggio Piazzale Sanseverino"
+            },
+            "sname": "Piazzale Sanseverino - P7",
+            "sorigin": "FBK",
+            "stype": "ParkingStation"
+        }
+    ],
+    "limit": 3000
+}
