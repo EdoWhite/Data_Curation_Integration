@@ -1,0 +1,41 @@
+id,location_id,name,available,active,origin,type
+102,5080.0,P02 - City parking,True,False,FAMAS,ParkingStation
+107,5081.0,P07 - Mareccio,True,False,FAMAS,ParkingStation
+112,5082.0,P12 - Piazza Tribunale,True,False,FAMAS,ParkingStation
+113,5083.0,P13 - Direzional 2,True,False,FAMAS,ParkingStation
+420,5084.0,@LUNA NOI Technologie Park(test),True,False,Legocity,ParkingStation
+520,5085.0,@LUNA Parking-Bikesharing(test),True,False,Legocity,ParkingStation
+103,5086.0,P03 - Piazza Walther,True,True,FAMAS,ParkingStation
+104,5087.0,P04 - Luna via Molini,True,True,FAMAS,ParkingStation
+105,5088.0,P05 - Laurin,True,True,FAMAS,ParkingStation
+106,5089.0,P06 - Central Parking via Renon,True,True,FAMAS,ParkingStation
+108,5090.0,P08 - BZ Centro via Mayr Nusser,True,True,FAMAS,ParkingStation
+115,5091.0,P15 - Palasport via Resia,True,True,FAMAS,ParkingStation
+116,5092.0,P16 - Fiera via Marco Polo/Buozzi,True,True,FAMAS,ParkingStation
+me:parkhuber,5093.0,Park Huber,True,True,Municipality Merano,ParkingStation
+me:parkkarlwolf,5094.0,Park Karl Wolf,True,True,Municipality Merano,ParkingStation
+me:parkkellereialgund,5095.0,Park Kellerei Algund,True,True,Municipality Merano,ParkingStation
+me:parkplaza,5096.0,Park Plaza,True,True,Municipality Merano,ParkingStation
+me:parkterme,5097.0,Park Terme,True,True,Municipality Merano,ParkingStation
+parking-a22:2,5098.0,BRENNERO NORD,True,True,A22,ParkingStation
+parking-a22:25,5099.0,PAGANELLA OVEST,True,True,A22,ParkingStation
+parking-a22:26,5100.0,PAGANELLA EST,True,True,A22,ParkingStation
+parking-a22:296,5101.0,FIRMIAN,True,True,A22,ParkingStation
+parking-a22:3,5098.0,BRENNERO SUD,True,True,A22,ParkingStation
+parking-a22:52,5102.0,CAMPOGALLIANO OVEST,True,True,A22,ParkingStation
+parking-a22:7,5103.0,SADOBRE,True,True,A22,ParkingStation
+parking-a22:774,5104.0,INTERPORTO TRENTO,True,True,A22,ParkingStation
+parking-a22:776,5105.0,CASA LUPO,True,True,A22,ParkingStation
+parking-a22:832,5106.0,ROVERETO SUD,True,True,A22,ParkingStation
+ROVERETO:asm,5107.0,A.S.M.,True,True,FBK,ParkingStation
+ROVERETO:centrostorico,5108.0,Centro Storico,True,True,FBK,ParkingStation
+ROVERETO:mart,5109.0,Mart,True,True,FBK,ParkingStation
+ROVERETO:parcheggiocentro,5110.0,Parcheggio Centro,True,True,FBK,ParkingStation
+ROVERETO:stazione,5111.0,Stazione,True,True,FBK,ParkingStation
+TRENTO:areaexsitviacanestrinip1,5112.0,Area ex SIT via Canestrini - P1,True,True,FBK,ParkingStation
+TRENTO:autosilobuonconsigliop3,5113.0,Autosilo Buonconsiglio - P3,True,True,FBK,ParkingStation
+TRENTO:centroeuropap2,5114.0,Centro Europa - P2,True,True,FBK,ParkingStation
+TRENTO:cteviabomportop6,5115.0,CTE via Bomporto - P6,True,True,FBK,ParkingStation
+TRENTO:duomop5,5116.0,Duomo - P5,True,True,FBK,ParkingStation
+TRENTO:piazzafierap4,5117.0,Piazza Fiera - P4,True,True,FBK,ParkingStation
+TRENTO:piazzalesanseverinop7,5118.0,Piazzale Sanseverino - P7,True,True,FBK,ParkingStation
