@@ -1,0 +1,7 @@
+./ontop endpoint --ontology=input/ontology.ttl --mapping=input/mapping.obda --properties=basic.properties
+
+./ontop bootstrap -m mapping.obda -p basic.properties -t ontology.ttl -b http://example.org/ 
+
+./ontop mapping to-r2rml -p basic.properties -i mapping.obda -o mapping.ttl  
+
+./ontop materialize -m mapping.ttl -p basic.properties -t ontology.ttl -o rdf-dataset.ttl -f turtle
