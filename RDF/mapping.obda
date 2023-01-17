@@ -1,0 +1,49 @@
+[PrefixDeclaration]
+rdf:		http://www.w3.org/1999/02/22-rdf-syntax-ns#
+rdfs:		http://www.w3.org/2000/01/rdf-schema#
+owl:		http://www.w3.org/2002/07/owl#
+xsd:		http://www.w3.org/2001/XMLSchema#
+obda:		https://w3id.org/obda/vocabulary#
+
+[MappingDeclaration] @collection [[
+mappingId	MAPPING-ID1
+target		<http://example.org/date/id={id}> a <http://example.org/date> ; <http://example.org/date#id> {id}^^xsd:integer ; <http://example.org/date#day> {day}^^xsd:integer ; <http://example.org/date#month> {month}^^xsd:integer ; <http://example.org/date#year> {year}^^xsd:integer . 
+source		SELECT * FROM "date"
+
+mappingId	MAPPING-ID2
+target		<http://example.org/parkplace/id={id}> a <http://example.org/parkplace> ; <http://example.org/parkplace#id> {id}^^xsd:string ; <http://example.org/parkplace#location_id> {location_id}^^xsd:integer ; <http://example.org/parkplace#name> {name}^^xsd:string ; <http://example.org/parkplace#available> {available}^^xsd:boolean ; <http://example.org/parkplace#active> {active}^^xsd:boolean ; <http://example.org/parkplace#origin> {origin}^^xsd:string ; <http://example.org/parkplace#type> {type}^^xsd:string . 
+source		SELECT * FROM "parkplace"
+
+mappingId	MAPPING-ID3
+target		<http://example.org/parkplace/id={parkplace_id}> <http://example.org/parkplace#ref-location_id> <http://example.org/location/id={location_id}> . 
+source		SELECT "parkplace"."id" AS "parkplace_id", "location"."id" AS "location_id" FROM "parkplace", "location" WHERE "parkplace"."location_id" = "location"."id"
+
+mappingId	MAPPING-ID4
+target		<http://example.org/accomodation/id={id}> a <http://example.org/accomodation> ; <http://example.org/accomodation#id> {id}^^xsd:string ; <http://example.org/accomodation#location_id> {location_id}^^xsd:integer ; <http://example.org/accomodation#source> {source}^^xsd:string ; <http://example.org/accomodation#has_room> {has_room}^^xsd:boolean ; <http://example.org/accomodation#acco_type_id> {acco_type_id}^^xsd:string ; <http://example.org/accomodation#shortname> {shortname}^^xsd:string ; <http://example.org/accomodation#is_bookable> {is_bookable}^^xsd:boolean ; <http://example.org/accomodation#name> {name}^^xsd:string ; <http://example.org/accomodation#website> {website}^^xsd:string ; <http://example.org/accomodation#lang> {lang}^^xsd:string ; <http://example.org/accomodation#phone> {phone}^^xsd:string . 
+source		SELECT * FROM "accomodation"
+
+mappingId	MAPPING-ID5
+target		<http://example.org/accomodation/id={accomodation_id}> <http://example.org/accomodation#ref-location_id> <http://example.org/location/id={location_id}> . 
+source		SELECT "accomodation"."id" AS "accomodation_id", "location"."id" AS "location_id" FROM "accomodation", "location" WHERE "accomodation"."location_id" = "location"."id"
+
+mappingId	MAPPING-ID6
+target		<http://example.org/location/id={id}> a <http://example.org/location> ; <http://example.org/location#id> {id}^^xsd:integer ; <http://example.org/location#zip> {zip}^^xsd:integer ; <http://example.org/location#city> {city}^^xsd:string ; <http://example.org/location#latitude> {latitude}^^xsd:double ; <http://example.org/location#longitude> {longitude}^^xsd:double ; <http://example.org/location#street> {street}^^xsd:string ; <http://example.org/location#country_code> {country_code}^^xsd:string . 
+source		SELECT * FROM "location"
+
+mappingId	MAPPING-ID7
+target		<http://example.org/event/id={id}> a <http://example.org/event> ; <http://example.org/event#id> {id}^^xsd:string ; <http://example.org/event#date_start_id> {date_start_id}^^xsd:integer ; <http://example.org/event#date_end_id> {date_end_id}^^xsd:integer ; <http://example.org/event#location_id> {location_id}^^xsd:integer ; <http://example.org/event#source> {source}^^xsd:string ; <http://example.org/event#shortname> {shortname}^^xsd:string ; <http://example.org/event#title> {title}^^xsd:string . 
+source		SELECT * FROM "event"
+
+mappingId	MAPPING-ID8
+target		<http://example.org/event/id={event_id}> <http://example.org/event#ref-date_end_id> <http://example.org/date/id={date_id}> . 
+source		SELECT "event"."id" AS "event_id", "date"."id" AS "date_id" FROM "event", "date" WHERE "event"."date_end_id" = "date"."id"
+
+mappingId	MAPPING-ID9
+target		<http://example.org/event/id={event_id}> <http://example.org/event#ref-date_start_id> <http://example.org/date/id={date_id}> . 
+source		SELECT "event"."id" AS "event_id", "date"."id" AS "date_id" FROM "event", "date" WHERE "event"."date_start_id" = "date"."id"
+
+mappingId	MAPPING-ID10
+target		<http://example.org/event/id={event_id}> <http://example.org/event#ref-location_id> <http://example.org/location/id={location_id}> . 
+source		SELECT "event"."id" AS "event_id", "location"."id" AS "location_id" FROM "event", "location" WHERE "event"."location_id" = "location"."id"
+]]
+

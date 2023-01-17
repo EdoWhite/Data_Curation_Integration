@@ -1,0 +1,324 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://example.org/"
+     xml:base="http://example.org/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://example.org/"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.org/accomodation#ref-location_id -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/accomodation#ref-location_id"/>
+    
+
+
+    <!-- http://example.org/event#ref-date_end_id -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/event#ref-date_end_id"/>
+    
+
+
+    <!-- http://example.org/event#ref-date_start_id -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/event#ref-date_start_id"/>
+    
+
+
+    <!-- http://example.org/event#ref-location_id -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/event#ref-location_id"/>
+    
+
+
+    <!-- http://example.org/parkplace#ref-location_id -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/parkplace#ref-location_id"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.org/accomodation#acco_type_id -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/accomodation#acco_type_id"/>
+    
+
+
+    <!-- http://example.org/accomodation#has_room -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/accomodation#has_room"/>
+    
+
+
+    <!-- http://example.org/accomodation#id -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/accomodation#id"/>
+    
+
+
+    <!-- http://example.org/accomodation#is_bookable -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/accomodation#is_bookable"/>
+    
+
+
+    <!-- http://example.org/accomodation#lang -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/accomodation#lang"/>
+    
+
+
+    <!-- http://example.org/accomodation#location_id -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/accomodation#location_id"/>
+    
+
+
+    <!-- http://example.org/accomodation#name -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/accomodation#name"/>
+    
+
+
+    <!-- http://example.org/accomodation#phone -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/accomodation#phone"/>
+    
+
+
+    <!-- http://example.org/accomodation#shortname -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/accomodation#shortname"/>
+    
+
+
+    <!-- http://example.org/accomodation#source -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/accomodation#source"/>
+    
+
+
+    <!-- http://example.org/accomodation#website -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/accomodation#website"/>
+    
+
+
+    <!-- http://example.org/date#day -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/date#day"/>
+    
+
+
+    <!-- http://example.org/date#id -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/date#id"/>
+    
+
+
+    <!-- http://example.org/date#month -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/date#month"/>
+    
+
+
+    <!-- http://example.org/date#year -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/date#year"/>
+    
+
+
+    <!-- http://example.org/event#date_end_id -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/event#date_end_id"/>
+    
+
+
+    <!-- http://example.org/event#date_start_id -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/event#date_start_id"/>
+    
+
+
+    <!-- http://example.org/event#id -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/event#id"/>
+    
+
+
+    <!-- http://example.org/event#location_id -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/event#location_id"/>
+    
+
+
+    <!-- http://example.org/event#shortname -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/event#shortname"/>
+    
+
+
+    <!-- http://example.org/event#source -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/event#source"/>
+    
+
+
+    <!-- http://example.org/event#title -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/event#title"/>
+    
+
+
+    <!-- http://example.org/location#city -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/location#city"/>
+    
+
+
+    <!-- http://example.org/location#country_code -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/location#country_code"/>
+    
+
+
+    <!-- http://example.org/location#id -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/location#id"/>
+    
+
+
+    <!-- http://example.org/location#latitude -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/location#latitude"/>
+    
+
+
+    <!-- http://example.org/location#longitude -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/location#longitude"/>
+    
+
+
+    <!-- http://example.org/location#street -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/location#street"/>
+    
+
+
+    <!-- http://example.org/location#zip -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/location#zip"/>
+    
+
+
+    <!-- http://example.org/parkplace#active -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/parkplace#active"/>
+    
+
+
+    <!-- http://example.org/parkplace#available -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/parkplace#available"/>
+    
+
+
+    <!-- http://example.org/parkplace#id -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/parkplace#id"/>
+    
+
+
+    <!-- http://example.org/parkplace#location_id -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/parkplace#location_id"/>
+    
+
+
+    <!-- http://example.org/parkplace#name -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/parkplace#name"/>
+    
+
+
+    <!-- http://example.org/parkplace#origin -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/parkplace#origin"/>
+    
+
+
+    <!-- http://example.org/parkplace#type -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/parkplace#type"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.org/accomodation -->
+
+    <owl:Class rdf:about="http://example.org/accomodation"/>
+    
+
+
+    <!-- http://example.org/date -->
+
+    <owl:Class rdf:about="http://example.org/date"/>
+    
+
+
+    <!-- http://example.org/event -->
+
+    <owl:Class rdf:about="http://example.org/event"/>
+    
+
+
+    <!-- http://example.org/location -->
+
+    <owl:Class rdf:about="http://example.org/location"/>
+    
+
+
+    <!-- http://example.org/parkplace -->
+
+    <owl:Class rdf:about="http://example.org/parkplace"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.19) https://github.com/owlcs/owlapi -->
+

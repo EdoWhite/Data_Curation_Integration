@@ -1,0 +1,390 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:MAPPING-ID1> a rr:TriplesMap;
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery "SELECT * FROM \"date\""
+    ];
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "month";
+          rr:datatype xsd:integer;
+          rr:termType rr:Literal
+        ];
+      rr:predicate <http://example.org/date#month>
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "year";
+          rr:datatype xsd:integer;
+          rr:termType rr:Literal
+        ];
+      rr:predicate <http://example.org/date#year>
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "id";
+          rr:datatype xsd:integer;
+          rr:termType rr:Literal
+        ];
+      rr:predicate <http://example.org/date#id>
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "day";
+          rr:datatype xsd:integer;
+          rr:termType rr:Literal
+        ];
+      rr:predicate <http://example.org/date#day>
+    ];
+  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
+      rr:class <http://example.org/date>;
+      rr:template "http://example.org/date/id={id}";
+      rr:termType rr:IRI
+    ] .
+
+<urn:MAPPING-ID2> a rr:TriplesMap;
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery "SELECT * FROM \"parkplace\""
+    ];
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "id";
+          rr:datatype xsd:string;
+          rr:termType rr:Literal
+        ];
+      rr:predicate <http://example.org/parkplace#id>
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "location_id";
+          rr:datatype xsd:integer;
+          rr:termType rr:Literal
+        ];
+      rr:predicate <http://example.org/parkplace#location_id>
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "name";
+          rr:datatype xsd:string;
+          rr:termType rr:Literal
+        ];
+      rr:predicate <http://example.org/parkplace#name>
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "available";
+          rr:datatype xsd:boolean;
+          rr:termType rr:Literal
+        ];
+      rr:predicate <http://example.org/parkplace#available>
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "active";
+          rr:datatype xsd:boolean;
+          rr:termType rr:Literal
+        ];
+      rr:predicate <http://example.org/parkplace#active>
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "origin";
+          rr:datatype xsd:string;
+          rr:termType rr:Literal
+        ];
+      rr:predicate <http://example.org/parkplace#origin>
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "type";
+          rr:datatype xsd:string;
+          rr:termType rr:Literal
+        ];
+      rr:predicate <http://example.org/parkplace#type>
+    ];
+  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
+      rr:class <http://example.org/parkplace>;
+      rr:template "http://example.org/parkplace/id={id}";
+      rr:termType rr:IRI
+    ] .
+
+<urn:MAPPING-ID3> a rr:TriplesMap;
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery "SELECT \"parkplace\".\"id\" AS \"parkplace_id\", \"location\".\"id\" AS \"location_id\" FROM \"parkplace\", \"location\" WHERE \"parkplace\".\"location_id\" = \"location\".\"id\""
+    ];
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:template "http://example.org/location/id={location_id}";
+          rr:termType rr:IRI
+        ];
+      rr:predicate <http://example.org/parkplace#ref-location_id>
+    ];
+  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
+      rr:template "http://example.org/parkplace/id={parkplace_id}";
+      rr:termType rr:IRI
+    ] .
+
+<urn:MAPPING-ID4> a rr:TriplesMap;
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery "SELECT * FROM \"accomodation\""
+    ];
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "id";
+          rr:datatype xsd:string;
+          rr:termType rr:Literal
+        ];
+      rr:predicate <http://example.org/accomodation#id>
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "location_id";
+          rr:datatype xsd:integer;
+          rr:termType rr:Literal
+        ];
+      rr:predicate <http://example.org/accomodation#location_id>
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "source";
+          rr:datatype xsd:string;
+          rr:termType rr:Literal
+        ];
+      rr:predicate <http://example.org/accomodation#source>
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "has_room";
+          rr:datatype xsd:boolean;
+          rr:termType rr:Literal
+        ];
+      rr:predicate <http://example.org/accomodation#has_room>
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "acco_type_id";
+          rr:datatype xsd:string;
+          rr:termType rr:Literal
+        ];
+      rr:predicate <http://example.org/accomodation#acco_type_id>
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "shortname";
+          rr:datatype xsd:string;
+          rr:termType rr:Literal
+        ];
+      rr:predicate <http://example.org/accomodation#shortname>
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "is_bookable";
+          rr:datatype xsd:boolean;
+          rr:termType rr:Literal
+        ];
+      rr:predicate <http://example.org/accomodation#is_bookable>
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "name";
+          rr:datatype xsd:string;
+          rr:termType rr:Literal
+        ];
+      rr:predicate <http://example.org/accomodation#name>
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "website";
+          rr:datatype xsd:string;
+          rr:termType rr:Literal
+        ];
+      rr:predicate <http://example.org/accomodation#website>
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "lang";
+          rr:datatype xsd:string;
+          rr:termType rr:Literal
+        ];
+      rr:predicate <http://example.org/accomodation#lang>
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "phone";
+          rr:datatype xsd:string;
+          rr:termType rr:Literal
+        ];
+      rr:predicate <http://example.org/accomodation#phone>
+    ];
+  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
+      rr:class <http://example.org/accomodation>;
+      rr:template "http://example.org/accomodation/id={id}";
+      rr:termType rr:IRI
+    ] .
+
+<urn:MAPPING-ID5> a rr:TriplesMap;
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery "SELECT \"accomodation\".\"id\" AS \"accomodation_id\", \"location\".\"id\" AS \"location_id\" FROM \"accomodation\", \"location\" WHERE \"accomodation\".\"location_id\" = \"location\".\"id\""
+    ];
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:template "http://example.org/location/id={location_id}";
+          rr:termType rr:IRI
+        ];
+      rr:predicate <http://example.org/accomodation#ref-location_id>
+    ];
+  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
+      rr:template "http://example.org/accomodation/id={accomodation_id}";
+      rr:termType rr:IRI
+    ] .
+
+<urn:MAPPING-ID6> a rr:TriplesMap;
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery "SELECT * FROM \"location\""
+    ];
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "street";
+          rr:datatype xsd:string;
+          rr:termType rr:Literal
+        ];
+      rr:predicate <http://example.org/location#street>
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "country_code";
+          rr:datatype xsd:string;
+          rr:termType rr:Literal
+        ];
+      rr:predicate <http://example.org/location#country_code>
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "id";
+          rr:datatype xsd:integer;
+          rr:termType rr:Literal
+        ];
+      rr:predicate <http://example.org/location#id>
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "zip";
+          rr:datatype xsd:integer;
+          rr:termType rr:Literal
+        ];
+      rr:predicate <http://example.org/location#zip>
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "city";
+          rr:datatype xsd:string;
+          rr:termType rr:Literal
+        ];
+      rr:predicate <http://example.org/location#city>
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "latitude";
+          rr:datatype xsd:double;
+          rr:termType rr:Literal
+        ];
+      rr:predicate <http://example.org/location#latitude>
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "longitude";
+          rr:datatype xsd:double;
+          rr:termType rr:Literal
+        ];
+      rr:predicate <http://example.org/location#longitude>
+    ];
+  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
+      rr:class <http://example.org/location>;
+      rr:template "http://example.org/location/id={id}";
+      rr:termType rr:IRI
+    ] .
+
+<urn:MAPPING-ID7> a rr:TriplesMap;
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery "SELECT * FROM \"event\""
+    ];
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "id";
+          rr:datatype xsd:string;
+          rr:termType rr:Literal
+        ];
+      rr:predicate <http://example.org/event#id>
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "date_start_id";
+          rr:datatype xsd:integer;
+          rr:termType rr:Literal
+        ];
+      rr:predicate <http://example.org/event#date_start_id>
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "date_end_id";
+          rr:datatype xsd:integer;
+          rr:termType rr:Literal
+        ];
+      rr:predicate <http://example.org/event#date_end_id>
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "location_id";
+          rr:datatype xsd:integer;
+          rr:termType rr:Literal
+        ];
+      rr:predicate <http://example.org/event#location_id>
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "source";
+          rr:datatype xsd:string;
+          rr:termType rr:Literal
+        ];
+      rr:predicate <http://example.org/event#source>
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "shortname";
+          rr:datatype xsd:string;
+          rr:termType rr:Literal
+        ];
+      rr:predicate <http://example.org/event#shortname>
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "title";
+          rr:datatype xsd:string;
+          rr:termType rr:Literal
+        ];
+      rr:predicate <http://example.org/event#title>
+    ];
+  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
+      rr:class <http://example.org/event>;
+      rr:template "http://example.org/event/id={id}";
+      rr:termType rr:IRI
+    ] .
+
+<urn:MAPPING-ID8> a rr:TriplesMap;
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery "SELECT \"event\".\"id\" AS \"event_id\", \"date\".\"id\" AS \"date_id\" FROM \"event\", \"date\" WHERE \"event\".\"date_end_id\" = \"date\".\"id\""
+    ];
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:template "http://example.org/date/id={date_id}";
+          rr:termType rr:IRI
+        ];
+      rr:predicate <http://example.org/event#ref-date_end_id>
+    ];
+  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
+      rr:template "http://example.org/event/id={event_id}";
+      rr:termType rr:IRI
+    ] .
+
+<urn:MAPPING-ID9> a rr:TriplesMap;
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery "SELECT \"event\".\"id\" AS \"event_id\", \"date\".\"id\" AS \"date_id\" FROM \"event\", \"date\" WHERE \"event\".\"date_start_id\" = \"date\".\"id\""
+    ];
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:template "http://example.org/date/id={date_id}";
+          rr:termType rr:IRI
+        ];
+      rr:predicate <http://example.org/event#ref-date_start_id>
+    ];
+  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
+      rr:template "http://example.org/event/id={event_id}";
+      rr:termType rr:IRI
+    ] .
+
+<urn:MAPPING-ID10> a rr:TriplesMap;
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery "SELECT \"event\".\"id\" AS \"event_id\", \"location\".\"id\" AS \"location_id\" FROM \"event\", \"location\" WHERE \"event\".\"location_id\" = \"location\".\"id\""
+    ];
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:template "http://example.org/location/id={location_id}";
+          rr:termType rr:IRI
+        ];
+      rr:predicate <http://example.org/event#ref-location_id>
+    ];
+  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
+      rr:template "http://example.org/event/id={event_id}";
+      rr:termType rr:IRI
+    ] .
