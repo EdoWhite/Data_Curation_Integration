@@ -53,7 +53,7 @@ def rideAccidentDescription(ride_name, executor):
 # PROCESSING & DISPLAY
 def display():
     with st.container():
-        st.write("#### What are the top 10 cities per number of accomodations?")
+        st.write("#### What are the 10 cities with the highest number of accomodations?")
         res = computeQuery(query_1, endpoint=endpoint)
         fig = px.bar(res, x="city", y="count", color="count", labels={"ciry":"City", "count":"Num. of Accomodations"}, text_auto="True")
         fig.update_xaxes(type="category")
@@ -64,7 +64,7 @@ def display():
         st.markdown("---")
 
     with st.container():
-        st.write("#### What are the top 10 cities per number of events?")
+        st.write("#### What are the 10 cities with the highest number of events?")
         res = computeQuery(query_2, endpoint=endpoint)
         fig = px.bar(res, x="city", y="count", color="count", labels={"ciry":"City", "count":"Num. of Events"}, text_auto="True")
         fig.update_xaxes(type="category")
